@@ -40,6 +40,7 @@ li:hover {
 
 .login-register {
     justify-self: flex-end;
+    margin-right: 75px;
 }
 
 .login-register ul {
@@ -53,7 +54,7 @@ li:hover {
 }
 
 #register {
-    border: 1px solid var(--medium-gray);
+    border: 2px solid var(--medium-gray);
     border-radius: 15px;
     padding: 12px 15px 12px 15px;
 }
@@ -102,7 +103,7 @@ li:hover {
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
-    margin-top: 150px;
+    margin-top: 75px;
 }
 
 #main-left {
@@ -130,7 +131,7 @@ li:hover {
 }
 
 #hero {
-    max-width: 40vw;
+    max-height: 90vh;
 }
 
 button {
