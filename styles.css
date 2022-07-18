@@ -1,5 +1,13 @@
-body {
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+}
 
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
 }
 
 ul {
@@ -8,6 +16,8 @@ ul {
 
 .header {
     display: flex;
+    margin: 25px;
+    color: var(--medium-gray);
 }
 
 .nav-menu ul {
@@ -18,4 +28,28 @@ ul {
 
 .nav-menu li {
     margin: 0 10px 0 10px;
+}
+
+.nav-empty {
+    flex-grow: 2;
+}
+
+.login-register {
+    justify-self: flex-end;
+}
+
+.login-register ul {
+    display: flex;
+    margin: -12px 10px 0 10px;
+    align-items: center;
+}
+
+.login-register li {
+    margin: 0 10px 0 10px;
+}
+
+#register {
+    border: 1px solid var(--medium-gray);
+    border-radius: 15px;
+    padding: 12px;
 }
