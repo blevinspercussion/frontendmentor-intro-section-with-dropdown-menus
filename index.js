@@ -93,7 +93,7 @@ if (features.children.length > 1) {
 });
 
 company.addEventListener('mouseenter', () => {
-    companyArrow.src = "./img/icon-arrow-up.svg"
+    companyArrow.src = "./img/icon-arrow-down.svg"
     company.appendChild(companyMenuDiv);
 });
 
