@@ -58,3 +58,16 @@ ul {
     color: var(--almost-black);
     cursor: pointer;
 }
+
+.sub-menu {
+    position: absolute;
+    left: 150px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 75px lightgray;
+}
+
+.sub-menu li {
+    margin: 15px;
+}

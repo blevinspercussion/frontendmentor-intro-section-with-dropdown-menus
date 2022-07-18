@@ -11,6 +11,8 @@ const register = document.getElementById("register");
 const featuresMenuDiv = document.createElement("div");
 const companyMenuDiv = document.createElement("div");
 
+featuresMenuDiv.classList.add('sub-menu');
+
 const featuresMenu = document.createElement("ul");
 const companyMenu = document.createElement("ul");
 
