@@ -24,19 +24,35 @@ const remindersIcon = document.createElement("img");
 const planning = document.createElement("li");
 const planningIcon = document.createElement("img");
 
+// Add text to list items
+todoList.textContent = "Todo List";
+calendar.textContent = "Calendar";
+reminders.textContent = "Reminders";
+planning.textContent = "Planning";
 
 // Create items for companyMenu
 const history = document.createElement("li");
 const outTeam = document.createElement("li");
 const blog = document.createElement("li");
 
-// Create 
-
 // Construct menus
+featuresMenuDiv.appendChild(todoList);
+featuresMenuDiv.appendChild(calendar);
+featuresMenuDiv.appendChild(reminders);
+featuresMenuDiv.appendChild(planning);
+
 
 
 
 // Add event listeners 
+features.addEventListener('mouseenter', () => {
+    features.appendChild(featuresMenuDiv);
+});
+
+features.addEventListener('mouseleave', () => {
+    features.removeChild(featuresMenuDiv);
+})
+
 
 
 
