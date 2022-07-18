@@ -123,7 +123,8 @@ li:hover {
 
 #main-left p {
     color: var(--medium-gray);
-    max-width: 475px;
+    font-size: 18pt;
+    max-width: 600px;
 }
 
 #main-right {
@@ -152,4 +153,8 @@ button:hover {
 
 #main-left-bottom {
     margin-top: auto;
+}
+
+.client-image {
+    margin-left: 50px;
 }
