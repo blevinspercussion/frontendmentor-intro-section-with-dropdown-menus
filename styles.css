@@ -60,12 +60,22 @@ ul {
 }
 
 .sub-menu {
-    position: absolute;
-    left: 150px;
+
     margin-top: 10px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 1px 1px 75px lightgray;
+    box-shadow: 5px 5px 75px rgb(234, 234, 234);
+}
+
+.features {
+    position: absolute;
+    left: 150px;
+
+}
+
+.company {
+    position: absolute;
+    left: 285px;
 }
 
 .sub-menu li {
