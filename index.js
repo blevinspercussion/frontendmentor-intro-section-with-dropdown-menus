@@ -78,21 +78,24 @@ companyMenuDiv.appendChild(blog);
 
 // Add event listeners 
 features.addEventListener('mouseenter', () => {
-    console.log(todoListIcon.src);
     features.appendChild(featuresMenuDiv);
 });
 
-features.addEventListener('mouseleave', () => {
+featuresMenuDiv.addEventListener('mouseleave', () => {
+if (features.children.length > 1) {
     features.removeChild(featuresMenuDiv);
+}
 });
 
 company.addEventListener('mouseenter', () => {
     company.appendChild(companyMenuDiv);
 });
 
-company.addEventListener('mouseleave', () => {
+companyMenuDiv.addEventListener('mouseleave', () => {
     company.removeChild(companyMenuDiv);
-})
+});
+
+
 
 
 
