@@ -7,6 +7,9 @@ const about = document.getElementById("about");
 const login = document.getElementById("login");
 const register = document.getElementById("register");
 
+const featuresArrow = document.getElementById('features-arrow');
+const companyArrow = document.getElementById('company-arrow');
+
 // Create submenus for navbar
 const featuresMenuDiv = document.createElement("div");
 const companyMenuDiv = document.createElement("div");
