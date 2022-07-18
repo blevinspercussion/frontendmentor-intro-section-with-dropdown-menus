@@ -144,6 +144,11 @@ button {
     margin-top: 50px;
 }
 
+button:hover {
+    color: var(--almost-black);
+    background-color: var(--almost-white);
+}
+
 #main-left-bottom {
     margin-top: auto;
 }
