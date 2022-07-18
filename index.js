@@ -81,26 +81,23 @@ companyMenuDiv.appendChild(blog);
 
 // Add event listeners 
 features.addEventListener('mouseenter', () => {
+    featuresArrow.src = "./img/icon-arrow-up.svg";
     features.appendChild(featuresMenuDiv);
 });
 
 featuresMenuDiv.addEventListener('mouseleave', () => {
 if (features.children.length > 1) {
+    featuresArrow.src = "./img/icon-arrow-down.svg";
     features.removeChild(featuresMenuDiv);
 }
 });
 
 company.addEventListener('mouseenter', () => {
+    companyArrow.src = "./img/icon-arrow-up.svg"
     company.appendChild(companyMenuDiv);
 });
 
 companyMenuDiv.addEventListener('mouseleave', () => {
+    companyArrow.src = "./img/icon-arrow-up.svg"
     company.removeChild(companyMenuDiv);
 });
-
-
-
-
-
-
-// Append items
