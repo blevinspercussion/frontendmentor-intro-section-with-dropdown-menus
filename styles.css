@@ -68,6 +68,7 @@ ul {
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 75px rgb(234, 234, 234);
+    color: var(--medium-gray);
 }
 
 .features {
