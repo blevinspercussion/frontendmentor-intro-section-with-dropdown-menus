@@ -1,9 +1,8 @@
-// Get DOM elements 
+/////////// Get DOM elements ////////////////
 const features = document.getElementById("features");
 const company = document.getElementById("company");
 const careers = document.getElementById("careers");
 const about = document.getElementById("about");
-
 
 
 const login = document.getElementById("login");
@@ -11,6 +10,13 @@ const register = document.getElementById("register");
 
 const featuresArrow = document.getElementById('features-arrow');
 const companyArrow = document.getElementById('company-arrow');
+
+// For mobile sidenav menu
+const hamburgerIcon = document.getElementById("hamburger-icon");
+const sidenav = document.getElementById("side-nav");
+const sidenavCloseIcon = document.getElementById("close-menu-icon");
+const sidenavFeatures = document.getElementById("sidenav-features");
+const sidenavCompany = document.getElementById("sidenav-company");
 
 // Create submenus for navbar
 const featuresMenuDiv = document.createElement("div");
