@@ -296,7 +296,6 @@ button:hover {
     #side-nav-login-register {
         display: flex;
         flex-direction: column;
-
     }
 
     .register {
