@@ -11,8 +11,7 @@ const register = document.getElementById("register");
 const featuresArrow = document.getElementsByClassName("features-arrow");
 const companyArrow = document.getElementsByClassName("company-arrow");
 
-// const featuresArrow = document.getElementById('features-arrow');
-// const companyArrow = document.getElementById('company-arrow');
+const bodyOverlay = document.getElementById("body-overlay");
 
 // For mobile sidenav menu
 const hamburgerIcon = document.getElementById("hamburger-icon");
@@ -123,5 +122,8 @@ companyMenuDiv.addEventListener('mouseleave', () => {
 
 // Listeners for mobile
 hamburgerIcon.addEventListener('click', () => {
-    console.log('clicked');
+    bodyOverlay.style.display = "block";
+    // sidenavCloseIcon.style.display = "block";
+    sidenav.style.width = "55%";
 })
+
