@@ -132,17 +132,33 @@ sidenavCloseIcon.addEventListener('click', () => {
 })
 
 sidenavFeatures.addEventListener('click', () => {
-    for (let i=0; i<featuresArrow.length; i++) {
-        featuresArrow[i].src = "./img/icon-arrow-up.svg";
-    }
-    sidenavFeatures.appendChild(featuresMenuDiv);
-    featuresMenuDiv.style.display = "flex";
+    if (sidenavFeatures.children.length > 1) {
+        for (let i=0; i<featuresArrow.length; i++) {
+            featuresArrow[i].src = "./img/icon-arrow-down.svg";
+        }
+        sidenavFeatures.removeChild(featuresMenuDiv);
+    } else {
+        for (let i=0; i<featuresArrow.length; i++) {
+            featuresArrow[i].src = "./img/icon-arrow-up.svg";
+        };
+        sidenavFeatures.appendChild(featuresMenuDiv);
+        featuresMenuDiv.style.display = "flex";
+    };
 })
 
 sidenavCompany.addEventListener('click', () => {
-    for (let i=0; i<companyArrow.length; i++) {
-        companyArrow[i].src = "./img/icon-arrow-up.svg";
+
+    if (sidenavCompany.children.length > 1) {
+        for (let i=0; i<companyArrow.length; i++) {
+            companyArrow[i].src = "./img/icon-arrow-down.svg";
+        }
+        sidenavCompany.removeChild(companyMenuDiv);
+    } else {
+
+        for (let i=0; i<companyArrow.length; i++) {
+            companyArrow[i].src = "./img/icon-arrow-up.svg";
+        }
+        sidenavCompany.appendChild(companyMenuDiv);
+        companyMenuDiv.style.display = "flex";
     }
-    sidenavCompany.appendChild(companyMenuDiv);
-    companyMenuDiv.style.display = "flex";
 })
