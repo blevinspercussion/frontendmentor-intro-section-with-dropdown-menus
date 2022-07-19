@@ -130,3 +130,19 @@ sidenavCloseIcon.addEventListener('click', () => {
     bodyOverlay.style.display = "none";
     sidenav.style.width = "0";
 })
+
+sidenavFeatures.addEventListener('click', () => {
+    for (let i=0; i<featuresArrow.length; i++) {
+        featuresArrow[i].src = "./img/icon-arrow-up.svg";
+    }
+    sidenavFeatures.appendChild(featuresMenuDiv);
+    featuresMenuDiv.style.display = "flex";
+})
+
+sidenavCompany.addEventListener('click', () => {
+    for (let i=0; i<companyArrow.length; i++) {
+        companyArrow[i].src = "./img/icon-arrow-up.svg";
+    }
+    sidenavCompany.appendChild(companyMenuDiv);
+    companyMenuDiv.style.display = "flex";
+})

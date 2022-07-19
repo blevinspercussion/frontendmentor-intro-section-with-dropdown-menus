@@ -302,4 +302,15 @@ button:hover {
 
         padding: 10px 75px 10px 75px;
     }
+
+    .sub-menu {
+        display: none;
+        position: relative;
+        top: -13px;
+        left: 10px;
+        box-shadow: none;
+        background-color: var(--almost-white);
+        transition: 0.5s;
+        
+    }
 }
