@@ -23,6 +23,10 @@ body {
     z-index: 2;
 }
 
+#side-nav {
+    display: none;
+}
+
 ul {
     list-style: none;
 }
@@ -258,7 +262,7 @@ button:hover {
         justify-content: left;
         color: var(--medium-gray);
         height: 100%;
-        width: 55%;
+        width: 0;
         position: fixed;
         z-index: 3;
         top: 0;
@@ -287,6 +291,7 @@ button:hover {
     }
 
     #close-menu-icon {
+        display: none;
         position: fixed;
         right: 25px;
         top: 30px;

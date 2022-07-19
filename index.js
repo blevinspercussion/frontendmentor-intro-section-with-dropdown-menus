@@ -8,8 +8,11 @@ const about = document.getElementById("about");
 const login = document.getElementById("login");
 const register = document.getElementById("register");
 
-const featuresArrow = document.getElementById('features-arrow');
-const companyArrow = document.getElementById('company-arrow');
+const featuresArrow = document.getElementsByClassName("features-arrow");
+const companyArrow = document.getElementsByClassName("company-arrow");
+
+// const featuresArrow = document.getElementById('features-arrow');
+// const companyArrow = document.getElementById('company-arrow');
 
 // For mobile sidenav menu
 const hamburgerIcon = document.getElementById("hamburger-icon");
@@ -89,24 +92,36 @@ companyMenuDiv.appendChild(blog);
 
 // Add event listeners 
 features.addEventListener('mouseenter', () => {
-    featuresArrow.src = "./img/icon-arrow-up.svg";
+    for (let i=0; i<featuresArrow.length; i++) {
+        featuresArrow[i].src = "./img/icon-arrow-up.svg";
+    }
     features.appendChild(featuresMenuDiv);
 });
 
 featuresMenuDiv.addEventListener('mouseleave', () => {
 if (features.children.length > 1) {
-    featuresArrow.src = "./img/icon-arrow-down.svg";
+    for (let i=0; i<featuresArrow.length; i++) {
+        featuresArrow[i].src = "./img/icon-arrow-down.svg";
+    }
     features.removeChild(featuresMenuDiv);
 }
 });
 
 company.addEventListener('mouseenter', () => {
-    companyArrow.src = "./img/icon-arrow-up.svg"
+    for (let i=0; i<companyArrow.length; i++) {
+        companyArrow[i].src = "./img/icon-arrow-up.svg";
+    }
     company.appendChild(companyMenuDiv);
 });
 
 companyMenuDiv.addEventListener('mouseleave', () => {
-    companyArrow.src = "./img/icon-arrow-down.svg"
+    for (let i=0; i<companyArrow.length; i++) {
+        companyArrow[i].src = "./img/icon-arrow-down.svg";
+    }
     company.removeChild(companyMenuDiv);
 });
 
+// Listeners for mobile
+hamburgerIcon.addEventListener('click', () => {
+    console.log('clicked');
+})
