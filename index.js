@@ -123,7 +123,7 @@ companyMenuDiv.addEventListener('mouseleave', () => {
 // Listeners for mobile
 hamburgerIcon.addEventListener('click', () => {
     bodyOverlay.style.display = "block";
-    sidenav.style.width = "55%";
+    sidenav.style.width = "66%";
 })
 
 sidenavCloseIcon.addEventListener('click', () => {
