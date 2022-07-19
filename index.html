@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link href="./styles.css" />
-    <script src="./index.js" defer />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Pacifico&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./index.js" defer></script>
     <title>snap</title>
-  </head>
-  <body>
-    <div class="header">
+</head>
+<body>
 
-</div>
-  </body>
+    <div class="header">
+        <img class="logo" src="./img/logo.svg">
+        <div class="nav-menu">
+            <ul>
+                <li id="features" class="nav-item">Features <img id="features-arrow" src="./img/icon-arrow-down.svg"></li>
+                <li id="company" class="nav-item">Company <img id="company-arrow" src="./img/icon-arrow-down.svg"></li>
+                <li id="careers" class="nav-item">Careers</li>
+                <li id="about" class="nav-item">About</li>
+            </ul>
+        </div>
+        <div class="nav-empty"></div>
+        <div class="login-register">
+            <ul>
+                <li id="login" class="nav-item">Login</li>
+                <li id="register" class="nav-item">Register</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div id="main-left">
+            <h1>Make <br />remote work</h1>
+            <br />
+            <p>
+                Get your team in sync, no matter your location.
+                Streamline processes, create team rituals, and 
+                watch productivity soar.
+            </p>
+            <button>Learn More</button>
+            <div id="main-left-bottom">
+                <img class="client-image" src="./img/client-databiz.svg">
+                <img class="client-image" src="./img/client-audiophile.svg">
+                <img class="client-image" src="./img/client-meet.svg">
+                <img class="client-image" src="./img/client-maker.svg">
+            </div>
+        </div>
+        <div id="main-right">
+            <img id="hero" src="./img/image-hero-desktop.png">
+        </div>
+
+    </div>
+    
+</body>
 </html>

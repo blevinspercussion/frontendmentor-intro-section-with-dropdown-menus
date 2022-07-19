@@ -4,7 +4,158 @@
     --almost-black: hsl(0, 0%, 8%);
 }
 
+
 body {
     font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
 }
 
+ul {
+    list-style: none;
+}
+
+li:hover {
+    color: var(--almost-black);
+}
+
+.header {
+    display: flex;
+    margin: 25px;
+    color: var(--medium-gray);
+    margin-bottom: 100px;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0 10px 0 10px;
+}
+
+.nav-menu li {
+    margin: 0 10px 0 10px;
+}
+
+.nav-empty {
+    flex-grow: 2;
+}
+
+.login-register {
+    justify-self: flex-end;
+    margin-right: 75px;
+}
+
+.login-register ul {
+    display: flex;
+    margin: -12px 10px 0 10px;
+    align-items: center;
+}
+
+.login-register li {
+    margin: 0 10px 0 10px;
+}
+
+#register {
+    border: 2px solid var(--medium-gray);
+    border-radius: 15px;
+    padding: 12px 15px 12px 15px;
+}
+
+.nav-item:hover {
+    color: var(--almost-black);
+    cursor: pointer;
+}
+
+.sub-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 75px rgb(234, 234, 234);
+    color: var(--medium-gray);
+}
+
+.features {
+    position: absolute;
+    left: 100px;
+
+}
+
+.company {
+    position: absolute;
+    left: 285px;
+}
+
+
+
+.sub-menu li {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 15px;
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+#main-content {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-top: 75px;
+}
+
+#main-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
+    margin: -100px 150px 0 75px;
+    padding: 50px
+
+}
+
+#main-left h1 {
+    font-size: 100px;
+    margin-top: 200px;
+}
+
+#main-left p {
+    color: var(--medium-gray);
+    font-size: 18pt;
+    max-width: 600px;
+}
+
+#main-right {
+    margin-right: 75px;
+}
+
+#hero {
+    max-height: 90vh;
+}
+
+button {
+    color: var(--almost-white);
+    background-color: var(--almost-black);
+    height: 50px;
+    padding: 15px 35px 15px 35px;
+    font-size: 18px;
+    border-radius: 15px;
+    font-family: 'Epilogue', sans-serif;
+    margin-top: 50px;
+}
+
+button:hover {
+    color: var(--almost-black);
+    background-color: var(--almost-white);
+}
+
+#main-left-bottom {
+    margin-top: auto;
+}
+
+.client-image {
+    margin-right: 50px;
+}
