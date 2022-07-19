@@ -4,6 +4,8 @@ const company = document.getElementById("company");
 const careers = document.getElementById("careers");
 const about = document.getElementById("about");
 
+
+
 const login = document.getElementById("login");
 const register = document.getElementById("register");
 
@@ -101,3 +103,4 @@ companyMenuDiv.addEventListener('mouseleave', () => {
     companyArrow.src = "./img/icon-arrow-down.svg"
     company.removeChild(companyMenuDiv);
 });
+

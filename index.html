@@ -15,6 +15,7 @@
 
     <div class="header">
         <img class="logo" src="./img/logo.svg">
+
         <div class="nav-menu">
             <ul>
                 <li id="features" class="nav-item">Features <img id="features-arrow" src="./img/icon-arrow-down.svg"></li>
@@ -26,12 +27,29 @@
         <div class="nav-empty"></div>
         <div class="login-register">
           <ul>
-            <li id="login" class="nav-item">Login</li>
-            <li id="register" class="nav-item">Register</li>
+            <li class="login" class="nav-item">Login</li>
+            <li class="register" class="nav-item">Register</li>
           </ul>
         </div>
-        <img src="./img/icon-menu.svg">
-    </div>
+        <div>
+          <img id="hamburger-icon" src="./img/icon-menu.svg">
+          <div id="side-nav">
+            <img id="close-menu-icon" src="./img/icon-close-menu.svg">
+            <ul>
+              <ul id="sidenav-features">Features <img src="./img/icon-arrow-down.svg"></ul>
+              <ul id="sidenav-company">Company <img src="./img/icon-arrow-down.svg"></ul>
+              <ul>Careers</ul>
+              <ul>About</ul>
+            </ul>
+            <div id="side-nav-login-register">
+              <ul>
+                <li class="login">Login</li>
+                <li class="register">Register</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <div id="main-content-desktop">
         <div id="main-left">
@@ -78,6 +96,8 @@
         <img class="client-image" src="./img/client-maker.svg">
     </div>
     </div>
+
+
     
 </body>
 </html>
