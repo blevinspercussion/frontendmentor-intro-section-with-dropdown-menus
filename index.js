@@ -91,6 +91,10 @@ companyMenuDiv.appendChild(blog);
 
 // Add event listeners 
 features.addEventListener('mouseenter', () => {
+    if (company.children.length > 1) {
+        company.removeChild(companyMenuDiv);
+    }
+
     for (let i=0; i<featuresArrow.length; i++) {
         featuresArrow[i].src = "./img/icon-arrow-up.svg";
     }
@@ -98,15 +102,21 @@ features.addEventListener('mouseenter', () => {
 });
 
 featuresMenuDiv.addEventListener('mouseleave', () => {
-if (features.children.length > 1) {
-    for (let i=0; i<featuresArrow.length; i++) {
-        featuresArrow[i].src = "./img/icon-arrow-down.svg";
-    }
+    if (features.children.length > 1) {
+        for (let i=0; i<featuresArrow.length; i++) {
+            featuresArrow[i].src = "./img/icon-arrow-down.svg";
+        }
     features.removeChild(featuresMenuDiv);
 }
 });
 
 company.addEventListener('mouseenter', () => {
+    if (features.children.length > 1) {
+        for (let i=0; i<featuresArrow.length; i++) {
+            featuresArrow[i].src = "./img/icon-arrow-down.svg";
+        }
+        features.removeChild(featuresMenuDiv);
+    }
     for (let i=0; i<companyArrow.length; i++) {
         companyArrow[i].src = "./img/icon-arrow-up.svg";
     }
