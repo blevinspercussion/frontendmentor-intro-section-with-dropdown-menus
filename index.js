@@ -93,6 +93,9 @@ companyMenuDiv.appendChild(blog);
 features.addEventListener('mouseenter', () => {
     if (company.children.length > 1) {
         company.removeChild(companyMenuDiv);
+        for (let i=0; i<companyArrow.length; i++) {
+            companyArrow[i].src = "./img/icon-arrow-down.svg";
+        }
     }
 
     for (let i=0; i<featuresArrow.length; i++) {
